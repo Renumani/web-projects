@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:lawngreen;
+}
+.container{
+    border:0;
+    width:90%;
+    margin:auto;
+    display:flex;
+}
+.list{
+    border:1px solid black;
+    width:600px;
+    min-height:100vh;
+    margin:auto;
+    background-color:white;
+    border-radius:20px;
+    box-shadow:10px 10px 24px 0 rgba(0,0,0,0.534);
+}
+header h1{
+    font-size:2rem;
+    margin-top: 1em;
+}
+.list input {
+list-style-type:none;
+font-family: inherit;
+outline:0;
+border:0;
+border-bottom:3px solid black;
+width:70%;
+font-size:1rem;
+}
+#allItems h2{
+margin-left: 50px;
+margin-right: 10px;
+margin-top: 15px;
+font-size: 2rem;
+}
