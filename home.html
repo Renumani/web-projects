@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<META name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Google login page</title>
+<style>
+body{
+width:70%;
+margin:0px auto;
+font-family:'Google sans','Noto sans Myanmar UI',arial,sans-serif;
+}
+img{
+height:90px;
+width:130px;
+padding:20px;
+}
+fieldset{
+color:blue;
+border-radius:10px;
+border-color:blue;
+width:60%;
+height:70px;
+}
+#email a{
+text-decoration:none;
+color:blue;
+}
+#learn a{
+text-decoration:none;
+color:blue;
+}
+#create{
+color:blue;
+}
+#next{
+text-align:center;
+margin-bottom:10px;
+width:50px;
+background-color:blue;
+text-decoration:none;
+border-radius:5px;
+color:white;
+padding:10px;
+float:right;
+}
+input{
+border:none;
+}
+</style>
+</head>
+<body>
+<center><img src="C:\Users\User\Desktop\googlelogin\images\googlefont.jpeg" alt="google"/ >
+<h1>Sign in</h1>
+<h3>to continue to Gmail</h3></center>
+<fieldset>
+<legend>Email or phone</legend>
+<input type = "text" required pattern = "^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$"/> 
+</fieldset>
+<h3 id ="email"><a href="#">Forgot email?</a></h3>
+<h3>Not your computer? Use Guest mode to sign in privately.</h3>
+<h3 id="learn"><a href="#">Learn more</a></h3>
+<h3 id="create">Create account</h3> <a href="#" id="next">Next</a>
+</body>
+</html>
