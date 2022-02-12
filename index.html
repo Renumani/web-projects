@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Javascript calculator</title>
+<style>
+*{
+margin:0;
+padding:0;
+background-color:#ecfof3;
+overflow:auto;
+}
+.container{
+margin:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.calculate{
+display:grid;
+grid-template-columns:repeat(4,90px);
+margin:auto;
+background-color:grey;
+border:1px solid grey;
+padding:20px;
+width:400px;
+height:90vh;
+border-radius:20px;
+}
+#userInput{
+grid-column:span 4;
+height:70px;
+width:360px;
+border:none;
+outline:none;
+border-radius:30px;
+text-align:end;
+margin:auto;
+padding:20px;
+font-size:30px;
+}
+button{
+width:70px;
+height:70px;
+margin-left:30px;
+border:none;
+outline:none;
+border-radius:50px;
+font-size:20px;
+box-shadow: inset 5px 5px 5px lightgrey,inset -5px -5px 5px lightgrey;
+}
+#equal{
+width:150px;
+}
+
+</style>
+</head>
+	
+<body>
+<main class="container">
+<article class="calculate">
+<input type="text" placeholder="0" id="userInput">
+<button onclick="clear()">Clr</button>
+<button onclick="delete()">Del</button>
+<button onclick="display('%')">%</button>
+<button onclick="display('/')">/</button>
+<button onclick="display(7)">7</button>
+<button onclick="display(8)">8</button>
+<button onclick="display(9)">9</button>
+<button onclick="display('*')">*</button>
+<button onclick="display(4)">4</button>
+<button onclick="display(5)">5</button>
+<button onclick="display(6)">6</button>
+<button onclick="display('-')">-</button>
+<button onclick="display(1)">1</button>
+<button onclick="display(2)">2</button>
+<button onclick="display(3)">3</button>
+<button onclick="display('+')">+</button>
+<button onclick="display('.')">.</button>
+<button onclick="display(0)">0</button>
+<button onclick="calculate()"id="equal">=</button>
+<article>
+</main>
+<script src="calc.js"></script>
+</body>
+</html>
