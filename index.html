@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee satisfaction form</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width" initial-scale="1"/>
+<script src="https://kit.fontawesome.com/6fffa8d5ef.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<header>
+<h1><i class="fas fa-pencil-alt"></i> JOTFORM</h1>
+<h2 id="esf">Employee Satisfaction Survey</h2>
+<button id="but1"><i class="fas fa-user"></i>   Add Collaborators</button>
+<button id="but2"><i class="fas fa-question-circle"></i>  Help</button>
+</header>
+<nav>
+<ul>
+<li><a href="#">BUILD</a></li>
+<li><a href="#">SETTINGS</a></li>
+<li><a href="#">PUBLISH</a></li>
+</ul>
+</nav>
+<article>
+<form>
+<h1>Employee Satisfaction Survey</h1>
+<br><br><hr>
+<label>Name</label><br>
+<input type="text" class="int fn" placeholder="FirstName"/> <input type="text" class="int" placeholder="LastName" /><br><br><br>
+<label>Date</label><br><input type="date"class="int"/><br><br><br>
+<label>How would you describe your overall level of job satisfaction?</label><br><br>
+<input type="radio" name="select"/> <label>Very satisfied</label><br>
+<input type="radio"  name="select"/> <label>Somewhat satisfied</label><br>
+<input type="radio" name="select"/> <label>Neutral</label><br>
+<input type="radio" name="select"/> <label>Somewhat dissatisfied</label><br>
+<input type="radio" name="select"/> <label>Very dissatisfied</label><br><br><br>
+<label>How would you rate the following?</label>
+<br><br>
+<section>
+<table>
+<tr>
+<th id="th1">  </th>
+<th>Very Poor</th>
+<th>Poor</th>
+<th>Average</th>
+<th>Good</th>
+<th>Excellent</th>
+</tr>
+<tr>
+<th> Salary </th>
+<td> <input type="radio" name="Salary"></td>
+<td> <input type="radio" name="Salary"></td>
+<td> <input type="radio" name="Salary"></td>
+<td> <input type="radio" name="Salary"></td>
+<td> <input type="radio" name="Salary"></td>
+</tr>
+<tr>
+<th> Overall benefits </th>
+<td><input type="radio" name="Overall"></td>
+<td><input type="radio" name="Overall"></td>
+<td><input type="radio" name="Overall"></td>
+<td><input type="radio" name="Overall"></td>
+<td><input type="radio" name="Overall"></td>
+</tr>
+<tr>
+<th> Health benefits</th>
+<td><input type="radio" name="Heal"></td>
+<td><input type="radio" name="Heal"></td>
+<td><input type="radio" name="Heal"></td>
+<td><input type="radio" name="Heal"></td>
+<td><input type="radio"name="Heal"></td>
+</tr>
+<tr>
+<th > Physical work environment	</th>
+<td><input type="radio" name="Physi"></td>
+<td><input type="radio" name="Physi"></td>
+<td><input type="radio" name="Physi"></td>
+<td><input type="radio" name="Physi"></td>
+<td><input type="radio" name="Physi"></td>
+</tr>
+<tr>
+<th class="rows"> Senior leadership</th>
+<td><input type="radio" name="Seni"></td>
+<td><input type="radio" name="Seni"></td>
+<td><input type="radio" name="Seni"></td>
+<td><input type="radio" name="Seni"></td>
+<td><input type="radio" name="Seni"></td>
+</tr>
+<tr>
+<th class="rows"> Individual management</th>
+<td><input type="radio" name="indi"></td>
+<td><input type="radio" name="indi"></td>
+<td><input type="radio"name="indi"></td>
+<td><input type="radio" name="indi"></td>
+<td><input type="radio" name="indi"></td>
+</tr>
+<tr>
+<th class="rows">Performance feedback  </th>
+<<td><input type="radio" name="perfo"></td>
+<td><input type="radio" name="perfo"></td>
+<td><input type="radio" name="perfo"></td>
+<td><input type="radio" name="perfo"></td>
+<td><input type="radio" name="perfo"></td>
+</tr>
+<tr>
+<th class="rows"> Employee evaluations	 </th>
+<td><input type="radio" name="employ"></td>
+<td><input type="radio" name="employ"></td>
+<td><input type="radio" name="employ"></td>
+<td><input type="radio" name="employ"></td>
+<td><input type="radio" name="employ"></td>
+</tr>
+<tr>
+<th class="rows"> Recognition </th>
+<td><input type="radio" name="recog"></td>
+<td><input type="radio" name="recog"></td>
+<td><input type="radio" name="recog"></td>
+<td><input type="radio" name="recog"></td>
+<td><input type="radio" name="recog"></td>
+</tr>
+<tr>
+<th class="rows"> Training opportunities </th>
+<td><input type="radio"name="train"></td>
+<td><input type="radio" name="train"></td>
+<td><input type="radio" name="train"></td>
+<td><input type="radio" name="train"></td>
+<td><input type="radio" name="train"></td>
+</tr>
+<tr>
+<th class="rows">Opportunities for advancement  </th>
+<td><input type="radio" name="opp"></td>
+<td><input type="radio" name="opp"></td>
+<td><input type="radio" name="opp"></td>
+<td><input type="radio" name="opp"></td>
+<td><input type="radio" name="opp"></td>
+</tr>
+</table>
+</section><br><br>
+<label>Do you feel valued at work?</label><br>
+<input type="radio" name="yn"/><label>Yes</label><br>
+<input type="radio" name="yn"/><label>No</label><br><br>
+<label>If No, Please Explain</label><br><br>
+<textarea cols="70" rows="8">Type Here...</textarea><br><br>
+<label>Do you have the resources you need to perform your job well?</label><br>
+<input type="radio" name="yn"/><label>Yes</label><br>
+<input type="radio" name="yn"/><label>No</label><br><br>
+<label>If No, Please Explain</label><br><br>
+<textarea cols="70" rows="8">Type Here...</textarea><br><br>
+<label>Does your job cause you stress or anxiety?</label><br>
+<input type="radio" name="yn"/><label>Yes</label><br>
+<input type="radio" name="yn"/><label>No</label><br><br>
+<label>If Yes, Please Explain</label><br><br>
+<textarea cols="70" rows="8">Type Here...</textarea><br><br>
+<label>Are sufficient efforts being made to solicit colleague opinions and feedback?</label><br>
+<input type="radio" name="yn"/><label>Yes</label><br>
+<input type="radio" name="yn"/><label>No</label><br><br>
+<label>If Yes, Please Explain</label><br><br>
+<textarea cols="70" rows="8">Type Here...</textarea><br><br>
+<label>Please Provide Any Additional Feedback</label><br><br>
+<textarea cols="70" rows="8">Type Here...</textarea><br><br><hr>
+<input type="button" id="but3"value="submit" name="submit"/>
+</form>
+</article>
+</body>
+</html>
