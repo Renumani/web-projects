@@ -27,6 +27,8 @@ height:30px;
 border-radius:10px;
 margin-left:20px;
 font-size:20px;
+padding:5px;
+outline:none;
 }
 textarea{
 border-radius:10px;
@@ -39,6 +41,10 @@ left:350px;
 background-color:skyblue;
 border-radius:5px;
 }
+#num::-webkit-inner-spin-button,
+     ::-webkit-outer-spin-button{
+	 appearance:none;
+	 } 
 </style>
 <script src="https://kit.fontawesome.com/6fffa8d5ef.js" crossorigin="anonymous"></script>
 </head>
@@ -54,7 +60,7 @@ border-radius:5px;
 <label>Email</label><br>
     <input type="email"  class="len"required><br><br>
 <label>Phone number</label><br>
-    <input type="number"  class="len" required><br><br>
+    <input type="number"  class="len" id="num" required><br><br>
 <label>what type of comment or request is this?</label><br>
 <input type="radio"  class="comment"><label>I Need An Estimate</label><br>
 <input type="radio"  class="comment"><label>I Need Website support</label><br>
