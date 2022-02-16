@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family:'Poppins',sans-serif;
+    background-color:goldenrod;
+}
+.container{
+background-color: silver;
+border-radius:5px;
+max-width:100%;
+width:500px;
+}
+header h1{
+    text-align:center;
+    font-size:30px;
+    border-bottom:2px solid dimgrey;
+    padding:2px;
+}
+.form {
+    padding:20px 40px;
+}
+.formcontrol{
+    margin-bottom:10px;
+    padding-bottom:10px;
+    position:relative;
+}
+.formcontrol label{
+    display:inline-block;
+    margin-bottom:5px;
+}
+.formcontrol input{
+    border:2px solid dimgrey;
+    border-radius:5px;
+    display:block;
+    padding:10px;
+    width:100%;
+    font-size:20px ;
+}
+.formcontrol input:focus{
+    border:none;
+    outline:none;
+}
+.formcontrol p{
+    color:red;
+    position: absolute;
+    top:75px;
+    left:0;
+    font-size:small;
+    visibility:hidden;
+}
+#phonenumber::-webkit-inner-spin-button,
+::-webkit-outer-spin-button{
+appearance:none;
+}
+
+.formcontrol .success input{
+    border-color:darkgreen;
+} 
+.formcontrol .error input{
+    border-color:red;
+}
+.formcontrol .error p{
+    visibility: visible;
+}
+.form button{
+    background-color: goldenrod;
+    border:none;
+    color:white;
+    display:block;
+    font-size:16px;
+    width:100%;
+    margin-top: 20px;
+    padding:10px;
+    border-radius:5px;
+    font-weight:bolder;
+}
