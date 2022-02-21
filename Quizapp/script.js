@@ -32,7 +32,7 @@ function checkAnswer()
 	choices = document.getElementsByName("choices");
 	for(var i=0;i<choices.length;i++){
 		if(choices[i].checked){
-			choice = choices[i].value;
+			choice = choices[i].value
 			console.log(choice);
 		}
 		
