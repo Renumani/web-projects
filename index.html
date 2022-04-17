@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area character restriction</title>
+    <style>
+        body{
+            background-color:aqua;
+        }
+        .main{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        h2{
+            font-size:30px;
+        }
+        #area{
+            resize:none;
+            font-size:30px;
+            text-indent: 50px;
+            padding-top:30px;
+            outline:none;
+            border:none;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Can Enter Comments Upto 500 Letters</h1>
+            <textarea placeholder="Enter your text here..." id="area" cols="50" rows="5" maxlength= "500"></textarea>
+            <h2><span id="txtcount"> 0 </span> / 500</h2>
+        </div>
+    </div>
+    <script>
+        var Area = document.getElementById("area");
+        Area.addEventListener("keyup",() => {
+            if(Area.value){
+                document.getElementById("txtcount").innerText = Area.value.length;
+            }else{
+                document.getElementById("txtcount").innerText = "0";
+            }
+            if(Area.value.length >= 500){
+                document.getElementById("txtcount").style.color = "red";
+                alert("Your are Exceeding the character limit!!!!");
+            }
+        });
+    </script>
+</body>
+</html>
